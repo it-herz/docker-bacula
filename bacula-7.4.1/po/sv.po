@@ -1,0 +1,485 @@
+# Swedish translations for PACKAGE package.
+# Copyright (C) 2000-2016 Kern Sibbald
+# License: BSD 2-Clause; see file LICENSE-FOSS
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bacula 2.1.x\n"
+"Report-Msgid-Bugs-To: bacula-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2016-01-10 15:13+0100\n"
+"PO-Revision-Date: 2007-06-22 19:18+0200\n"
+"Last-Translator: Kern Sibbald <kern@bacula.org>\n"
+"Language-Team: Swedish <bacula-devel@lists.soureforge.net>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/baconfig.h:64 src/baconfig.h:65 src/baconfig.h:70 src/baconfig.h:71
+#: src/baconfig.h:82 src/baconfig.h:83
+#, c-format
+msgid "Failed ASSERT: %s\n"
+msgstr ""
+
+#: src/baconfig.h:91
+msgid "*None*"
+msgstr ""
+
+#: src/lib/status.h:77
+msgid ""
+"\n"
+"Terminated Jobs:\n"
+msgstr ""
+
+#: src/lib/status.h:84
+msgid " JobId  Level    Files      Bytes   Status   Finished        Name \n"
+msgstr ""
+
+#: src/lib/status.h:86
+msgid "===================================================================\n"
+msgstr ""
+
+#: src/lib/status.h:106
+msgid "Created"
+msgstr ""
+
+#: src/lib/status.h:110
+msgid "Error"
+msgstr ""
+
+#: src/lib/status.h:113
+msgid "Diffs"
+msgstr ""
+
+#: src/lib/status.h:116
+msgid "Cancel"
+msgstr ""
+
+#: src/lib/status.h:119
+msgid "OK"
+msgstr ""
+
+#: src/lib/status.h:122
+msgid "OK -- with warnings"
+msgstr ""
+
+#: src/lib/status.h:125
+msgid "Incomplete"
+msgstr ""
+
+#: src/lib/status.h:128
+msgid "Other"
+msgstr ""
+
+#: src/lib/status.h:140
+#, c-format
+msgid "%6d\t%-6s\t%8s\t%10s\t%-7s\t%-8s\t%s\n"
+msgstr ""
+
+#: src/lib/status.h:148
+#, c-format
+msgid "%6d  %-6s %8s %10s  %-7s  %-8s %s\n"
+msgstr ""
+
+#: src/lib/status.h:177 src/lib/status.h:188 src/lib/status.h:202
+#: src/lib/status.h:206 src/lib/status.h:210
+msgid "Bacula "
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:132
+#, c-format
+msgid "No record for %d %s\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:141
+#, c-format
+msgid "Director: name=%s address=%s DIRport=%d\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:145
+#, c-format
+msgid "Console: name=%s\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:148
+#: src/qt-console/tray-monitor/tray_conf.cpp:186
+#, c-format
+msgid "ConsoleFont: name=%s font face=%s\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:152 src/qt-console/bat_conf.cpp:233
+#: src/qt-console/bat_conf.cpp:283 src/qt-console/bat_conf.cpp:313
+#, c-format
+msgid "Unknown resource type %d\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:261
+#: src/qt-console/tray-monitor/tray_conf.cpp:279
+#, c-format
+msgid "%s item is required in %s resource, but not found.\n"
+msgstr ""
+
+#: src/qt-console/bat_conf.cpp:330
+#: src/qt-console/tray-monitor/tray_conf.cpp:363
+#, c-format
+msgid "Attempt to define second %s resource named \"%s\" is not permitted.\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:88
+#, c-format
+msgid "Already connected\"%s\".\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:99
+#: src/qt-console/tray-monitor/tray-monitor.cpp:352
+#, c-format
+msgid "Connecting to Director %s:%d"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:101
+#, c-format
+msgid ""
+"Connecting to Director %s:%d\n"
+"\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:153
+#, c-format
+msgid "Failed to initialize TLS context for Console \"%s\".\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:176
+#, c-format
+msgid "Failed to initialize TLS context for Director \"%s\".\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:198
+#: src/qt-console/tray-monitor/tray-monitor.cpp:357
+msgid "Director daemon"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:236
+msgid "Initializing ..."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:252 src/qt-console/console/console.cpp:133
+msgid "Connected"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:376
+msgid "Command completed ..."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:383 src/qt-console/console/console.cpp:370
+msgid "Processing command ..."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:390
+msgid "At main prompt waiting for input ..."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:397 src/qt-console/bcomm/dircomm.cpp:407
+msgid "At prompt waiting for input ..."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:415
+msgid "Command failed."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm.cpp:487
+msgid "Director disconnected."
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:110
+#, c-format
+msgid "Director authorization problem at \"%s:%d\"\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:117
+#, c-format
+msgid ""
+"Authorization problem: Remote server at \"%s:%d\" did not advertise required "
+"TLS support.\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:125
+#, c-format
+msgid ""
+"Authorization problem with Director at \"%s:%d\": Remote server requires "
+"TLS.\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:136
+#, c-format
+msgid "TLS negotiation failed with Director at \"%s:%d\"\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:148
+#, c-format
+msgid ""
+"Bad response to Hello command: ERR=%s\n"
+"The Director at \"%s:%d\" is probably not running.\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:157
+#, c-format
+msgid "Director at \"%s:%d\" rejected Hello command\n"
+msgstr ""
+
+#: src/qt-console/bcomm/dircomm_auth.cpp:172
+#, c-format
+msgid ""
+"Authorization problem with Director at \"%s:%d\"\n"
+"Most likely the passwords do not agree.\n"
+"If you are using TLS, there may have been a certificate validation error "
+"during the TLS handshake.\n"
+"For help, please see "
+msgstr ""
+
+#: src/qt-console/main.cpp:158
+msgid "Cryptography library initialization failed.\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:162
+#, c-format
+msgid "Please correct configuration file: %s\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:186
+#, c-format
+msgid ""
+"\n"
+"Version: %s (%s) %s %s %s\n"
+"\n"
+"Usage: bat [-s] [-c config_file] [-d debug_level] [config_file]\n"
+"       -c <file>   set configuration file to file\n"
+"       -dnn        set debug level to nn\n"
+"       -s          no signals\n"
+"       -t          test - read configuration and exit\n"
+"       -?          print this message.\n"
+"\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:219 src/qt-console/main.cpp:249
+msgid "TLS required but not configured in Bacula.\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:227
+#, c-format
+msgid ""
+"Neither \"TLS CA Certificate\" or \"TLS CA Certificate Dir\" are defined for "
+"Director \"%s\" in %s. At least one CA certificate store is required.\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:236
+#, c-format
+msgid ""
+"No Director resource defined in %s\n"
+"Without that I don't how to speak to the Director :-(\n"
+msgstr ""
+
+#: src/qt-console/main.cpp:257
+#, c-format
+msgid ""
+"Neither \"TLS CA Certificate\" or \"TLS CA Certificate Dir\" are defined for "
+"Console \"%s\" in %s.\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:78
+msgid ""
+"Director authorization problem.\n"
+"Most likely the passwords do not agree.\n"
+"For help, please see "
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:87
+#, c-format
+msgid "Bad response to Hello command: ERR=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:94
+msgid "Director rejected Hello command\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:122
+#, c-format
+msgid "Error sending Hello to Storage daemon. ERR=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:128
+msgid ""
+"Director and Storage daemon passwords or names not the same.\n"
+"For help, please see "
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:135
+#, c-format
+msgid "bdird<stored: bad response to Hello command: ERR=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:142
+msgid "Storage daemon rejected Hello command\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:168
+#, c-format
+msgid "Error sending Hello to File daemon. ERR=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:174
+msgid ""
+"Director and File daemon passwords or names not the same.\n"
+"For help, please see "
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:181
+#, c-format
+msgid "Bad response from File daemon to Hello command: ERR=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/authenticate.cpp:188
+msgid "File daemon rejected Hello command\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:58
+#, c-format
+msgid ""
+"\n"
+"Version: %s (%s) %s %s %s\n"
+"\n"
+"Usage: tray-monitor [-c config_file] [-d debug_level]\n"
+"       -c <file>     set configuration file to file\n"
+"       -d <nn>       set debug level to <nn>\n"
+"       -dt           print timestamp in debug output\n"
+"       -t            test - read configuration and exit\n"
+"       -?            print this message.\n"
+"\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:209
+#, c-format
+msgid ""
+"Error: %d Monitor resources defined in %s. You must define one and only one "
+"Monitor resource.\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:241
+#, c-format
+msgid ""
+"No Client, Storage or Director resource defined in %s\n"
+"Without that I don't how to get status from the File, Storage or Director "
+"Daemon :-(\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:256
+#, c-format
+msgid ""
+"Invalid refresh interval defined in %s\n"
+"This value must be greater or equal to 1 second and less or equal to 10 "
+"minutes (read value: %d).\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:324
+#, c-format
+msgid "Error, currentitem is not a Client or a Storage..\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:362
+#, c-format
+msgid "Connecting to Client %s:%d"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:367
+msgid "File daemon"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:372
+#, c-format
+msgid "Connecting to Storage %s:%d"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:377
+msgid "Storage daemon"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:381
+#: src/qt-console/tray-monitor/tray-monitor.cpp:411
+#, c-format
+msgid "Error, currentitem is not a Client, a Storage or a Director..\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:386
+msgid "Cannot connect to daemon."
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:395
+#, c-format
+msgid "Authentication error : %s"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:402
+msgid "Opened connection with Director daemon."
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:405
+msgid "Opened connection with File daemon."
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:408
+msgid "Opened connection with Storage daemon."
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:459
+msgid "Error : BNET_HARDEOF or BNET_ERROR"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray-monitor.cpp:468
+msgid "Error : Connection closed."
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:159
+#, c-format
+msgid "No %s resource defined\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:168
+#, c-format
+msgid "Monitor: name=%s FDtimeout=%s SDtimeout=%s\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:174
+#, c-format
+msgid "Director: name=%s address=%s FDport=%d\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:178
+#, c-format
+msgid "Client: name=%s address=%s FDport=%d\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:182
+#, c-format
+msgid "Storage: name=%s address=%s SDport=%d\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:190
+#, c-format
+msgid "Unknown resource type %d in dump_resource.\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:248
+#, c-format
+msgid "Unknown resource type %d in free_resource.\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:285
+#, c-format
+msgid "Too many items in %s resource\n"
+msgstr ""
+
+#: src/qt-console/tray-monitor/tray_conf.cpp:305
+#: src/qt-console/tray-monitor/tray_conf.cpp:343
+#, c-format
+msgid "Unknown resource type %d in save_resource.\n"
+msgstr ""
