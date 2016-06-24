@@ -13,8 +13,8 @@ db_port=${DB_PORT:-5432}
 db_user=${DB_USER:-postgres}
 db_pass=${DB_PASSWORD:-postgres}
 
-echo "$db_host:$db_port:template1:$db_user:$db_pass" >/root/.pgfile
-echo "$db_host:$db_port:$db_name:$db_user:$db_pass" >>/root/.pgfile
+echo "$db_host:$db_port:template1:$db_user:$db_pass" >/root/.pgpass
+echo "$db_host:$db_port:$db_name:$db_user:$db_pass" >>/root/.pgpass
 #
 # use SQL_ASCII to be able to put any filename into
 #  the database even those created with unusual character sets
@@ -48,7 +48,7 @@ esac
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #
 #
-if psql -h $db_host -p $db_port -U $db_user -W $db_pass -f - -d template1 $* <<END-OF-DATA
+if psql -h $db_host -p $db_port -U $db_user -f - -d template1 $* <<END-OF-DATA
 \set ON_ERROR_STOP on
 CREATE DATABASE ${db_name} $ENCODING TEMPLATE template0;
 ALTER DATABASE ${db_name} SET datestyle TO 'ISO, YMD';
