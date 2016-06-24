@@ -13,13 +13,16 @@ db_port=${DB_PORT:-5432}
 db_user=${DB_USER:-postgres}
 db_pass=${DB_PASSWORD:-postgres}
 
+export PGPASSWORD=postgres
+
 echo "$db_host:$db_port:template1:$db_user:$db_pass" >/root/.pgpass
 echo "$db_host:$db_port:$db_name:$db_user:$db_pass" >>/root/.pgpass
-#
+chmod 600 /root/.pgpass
+
 # use SQL_ASCII to be able to put any filename into
 #  the database even those created with unusual character sets
 
-PSQLVERSION=`psql -U $db_user -h $db_host -p $db_port -d template1 -c 'select version()' $* | awk '/PostgreSQL/ {print $2}' | cut -d '.' -f 1,2`
+PSQLVERSION=`psql -h $db_host -p $db_port -U $db_user -d template1 -c 'select version()' $* | awk '/PostgreSQL/ {print $2}' | cut -d '.' -f 1,2`
 
 #
 # Note, LC_COLLATE and LC_TYPE are needed on 8.4 and beyond, but are
@@ -62,7 +65,7 @@ else
    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
    exit 1
 fi
-if psql -h $db_host -U $db_user -p $db_port -l | grep " ${db_name}.*SQL_ASCII" >/dev/null; then 
+if psql -h $db_host -p $db_port -U $db_user -l | grep " ${db_name}.*SQL_ASCII" >/dev/null; then 
    echo "Database encoding OK"
 else
    echo " "

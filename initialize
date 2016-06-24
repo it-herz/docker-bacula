@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -f /etc/bacula/initialized ]
+then
+  cp /create_postgresql_database /etc/bacula/scripts/
+  cp /make_postgresql_tables /etc/bacula/scripts
+  cd /etc/bacula/scripts
+  ./create_bacula_database
+  ./make_postgresql_tables
+fi
+
+supervisorctl start bacula-dir
+supervisorctl start bacula-sd
