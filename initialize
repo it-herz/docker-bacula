@@ -9,5 +9,5 @@ then
   ./make_postgresql_tables
 fi
 
-supervisorctl start bacula-dir
-supervisorctl start bacula-sd
+supervisorctl start baculadir
+supervisorctl start baculasd

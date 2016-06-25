@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y mc wget build-essential libreadline6-dev zlib1g-dev liblzo2-dev mt-st mtx postfix libacl1-dev libssl-dev postgresql-server-dev-9.5 postgresql-client-9.5 sudo && \
+RUN apt-get update && apt-get install -y mc wget build-essential libreadline6-dev zlib1g-dev liblzo2-dev mt-st mtx postfix libacl1-dev libssl-dev postgresql-server-dev-9.5 postgresql-client-9.5 sudo python-setuptools && \
     wget -qO- http://bacula.us/741 | tar -xzvf - -C /usr/src && \
     cd /usr/src/bacula* && \
     ./configure --with-readline=/usr/include/readline --disable-conio --bindir=/usr/bin --sbindir=/usr/sbin \
@@ -15,6 +15,6 @@ ADD make_postgresql_tables /
 ADD initialize /
 ADD supervisord.conf /etc/supervisord.conf
 
-VOLUME /etc/bacula
+VOLUME [ "/etc/bacula", "/storage" ]
 
 CMD ["supervisord","-n","-c","/etc/supervisord.conf"]
