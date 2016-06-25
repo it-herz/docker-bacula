@@ -17,4 +17,6 @@ ADD supervisord.conf /etc/supervisord.conf
 
 VOLUME [ "/etc/bacula", "/storage" ]
 
+EXPOSE 9101 9103
+
 CMD ["supervisord","-n","-c","/etc/supervisord.conf"]
