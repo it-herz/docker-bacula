@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y mc wget build-essential libreadline6-de
     ./configure --with-readline=/usr/include/readline --disable-conio --bindir=/usr/bin --sbindir=/usr/sbin \
     --with-scriptdir=/etc/bacula/scripts --with-working-dir=/var/lib/bacula --with-logdir=/var/log \
     --enable-smartalloc --with-postgresql --with-archivedir=/mnt/backup && \
-    make -j8 && make install && mkdir /var/log/supervisor/ && /usr/bin/easy_install supervisor && /usr/bin/easy_install supervisor-stdout && /usr/bin/easy_install supervisor-logging
+    make -j8 && make install && mkdir /var/log/supervisor/ && /usr/bin/easy_install supervisor && /usr/bin/easy_install supervisor-stdout && /usr/bin/easy_install supervisor-logging && \
+    mkdir -p /var/run/bacula && mkdir -p /var/log/bacula
 
 ADD create_postgresql_database /
 ADD make_postgresql_tables /
