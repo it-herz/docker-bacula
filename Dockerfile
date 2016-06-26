@@ -16,7 +16,7 @@ ADD make_postgresql_tables /
 ADD initialize /
 ADD supervisord.conf /etc/supervisord.conf
 
-VOLUME [ "/etc/bacula", "/storage" ]
+VOLUME [ "/etc/bacula", "/bacula" ]
 
 EXPOSE 9101 9103
 
