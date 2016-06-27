@@ -8,7 +8,7 @@
 
 PATH="/usr/lib/postgresql/9.5/bin:$PATH"
 db_name=${DB_NAME:-bacula}
-db_host=${DB_HOST:-db}
+db_host=${DB_HOST:-postgresql}
 db_port=${DB_PORT:-5432}
 db_user=${DB_USER:-postgres}
 db_pass=${DB_PASSWORD:-postgres}
