@@ -22,15 +22,6 @@ chmod 600 /root/.pgpass
 # use SQL_ASCII to be able to put any filename into
 #  the database even those created with unusual character sets
 
-NOTCONNECTED=1
-while [ $NOTCONNECTED == 1 ]
-do
-  echo Waiting for database
-  sleep 3
-  nc -z $db_host $db_port
-  NOTCONNECTED=$?
-done
-
 PSQLVERSION=`psql -h $db_host -p $db_port -U $db_user -d template1 -c 'select version()' $* | awk '/PostgreSQL/ {print $2}' | cut -d '.' -f 1,2`
 
 #
