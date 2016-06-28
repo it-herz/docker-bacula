@@ -11,5 +11,5 @@ then
   touch /etc/bacula/initialized
 fi
 
-supervisorctl start baculadir
-supervisorctl start baculasd
+#supervisorctl start baculadir
+#supervisorctl start baculasd
