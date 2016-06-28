@@ -23,15 +23,12 @@ chmod 600 /root/.pgpass
 #  the database even those created with unusual character sets
 
 NOTCONNECTED=1
-while [ $NOTCONNECTED != 0 ]
+while [ $NOTCONNECTED == 1 ]
 do
+  echo Waiting for database
+  sleep 3
   nc -z $db_host $db_port
   NOTCONNECTED=$?
-  if [ $NOTCONNECTED != 0 ]
-  then
-    echo Waiting for database
-    sleep 1
-  fi
 done
 
 PSQLVERSION=`psql -h $db_host -p $db_port -U $db_user -d template1 -c 'select version()' $* | awk '/PostgreSQL/ {print $2}' | cut -d '.' -f 1,2`
